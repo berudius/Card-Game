@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="game-place">
+
+    </div>
+    <div class="command-palette">
+      <select id="drop-list" onchange="UpdateCardQuantity()">
+        <option value="">4x4</option>
+        <option value="">8x8</option>
+        <option value="">12x12</option>
+      </select>
+      <select class="drop-list-difficulty" onchange="GetDurationAndSetTimer()">
+        <option value="easy">Easy</option>
+        <option value="normal">Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <select id="drop-list-players" onchange="RechangeGameMode()">
+        <option value="one player">One player</option>
+        <option value="two players">Two players</option>
+      </select>
+      <select class="drop-list-rounds hide-block" onchange="ChangeRoundsQuantity()">
+        <option value="one">One round</option>
+        <option value="two">Two rounds</option>
+        <option value="two">Thee rounds</option>
+        <option value="two">Four rounds</option>
+        <option value="two">Five rounds</option>
+        <option value="two">Six rounds</option>
+        <option value="two">Seven rounds</option>
+        <option value="two">Eight rounds</option>
+      </select>
+      <button class="btn" onclick="Start()">Start</button>
+      <span class="timer">3:00</span>
+      <span class="player-data1 hide-block">Player1:</span>
+      <span class="player-data2 hide-block">Player2:</span>
+      <span class="goes-info hide-block"></span>
+    </div>
+    
+
+  </div>
+
+  <span class="round hide-block">Round 1</span>
+
+  <button>
+    <a href="task2/index.html" target="_blank" >Завдання 2</a>
+  </button>
+  <script src='main.js'></script>
+</body>
+</html>
+
